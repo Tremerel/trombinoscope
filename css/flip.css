@@ -1,0 +1,53 @@
+.scene {
+  width: 330px;
+  height: 590px;
+  border-radius: 10px;
+  perspective: 600px;
+}
+
+.card {
+  width: 330px;
+  height: 590px;
+  border-radius: 10px;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card__face {
+  position: absolute;
+  width: 330px;
+  height: 590px;
+  line-height: 260px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  border-radius: 10px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.model {
+  width: 320px;
+  margin: 5px;
+  margin-top: 90px;
+  border-radius: 10px;
+}
+
+.card__face--front {
+  background: red;
+}
+
+.card__face--back {
+  background: blue;
+  transform: rotateY(180deg);
+}
