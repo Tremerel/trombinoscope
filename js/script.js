@@ -9,7 +9,8 @@
     });  
   });
 
-  var box = document.querySelector('.card');
-box.addEventListener( 'click', function() {
+  var boxes = document.querySelectorAll('.card');
+  boxes.forEach(function(box){
+     box.addEventListener( 'click', function() {
   box.classList.toggle('is-flipped');
-});
+})})
