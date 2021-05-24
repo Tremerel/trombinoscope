@@ -23,7 +23,6 @@
   position: absolute;
   width: 330px;
   height: 590px;
-  line-height: 260px;
   color: white;
   text-align: center;
   font-weight: bold;
@@ -44,10 +43,10 @@
 }
 
 .card__face--front {
-  background: red;
+  background: #17171d;
 }
 
 .card__face--back {
-  background: blue;
+  background: #17171d;
   transform: rotateY(180deg);
 }
